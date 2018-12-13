@@ -1,0 +1,29 @@
+PODS:
+  - Alamofire (4.5.1)
+  - FSPagerView (0.7.1)
+  - ObjectMapper (3.0.0)
+  - Realm (3.0.1):
+    - Realm/Headers (= 3.0.1)
+  - Realm/Headers (3.0.1)
+  - RealmSwift (3.0.1):
+    - Realm (= 3.0.1)
+  - SwiftyJSON (3.1.4)
+
+DEPENDENCIES:
+  - Alamofire
+  - FSPagerView
+  - ObjectMapper
+  - RealmSwift
+  - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
+  FSPagerView: 958aba39684e1573755ddcfcc29f7eebb8413cee
+  ObjectMapper: 92230db59bf8f341a5c3a3cf0b9fbdde3cf0d87f
+  Realm: ba6144c74f835f7497791f6599d63a7755377b83
+  RealmSwift: 7d13b1ac4b6022a13f841e3143e7789c9e40ad0d
+  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
+
+PODFILE CHECKSUM: 79ef7907c6acf5da0eb3eb56939e61f394fac431
+
+COCOAPODS: 1.2.0
