@@ -2,7 +2,7 @@
 //  Success.swift
 //  Ticket
 //
-//  Created by AruniOS on 05/12/18.
+//  Created by Mukil on 05/12/18.
 //  Copyright © 2018 Class. All rights reserved.
 //
 
@@ -14,6 +14,7 @@ class Success: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        print(seatNumber)
         // Do any additional setup after loading the view.
     }
     override func didReceiveMemoryWarning() {

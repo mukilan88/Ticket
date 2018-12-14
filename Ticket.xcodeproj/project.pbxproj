@@ -17,8 +17,11 @@
 		EC1B09D621B526A400313DA2 /* AboutMovie.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1B09D521B526A400313DA2 /* AboutMovie.swift */; };
 		EC1F0B0821C1281D000DCB4B /* SeatNo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1F0B0721C1281C000DCB4B /* SeatNo.swift */; };
 		EC25A9BB21AE984400910AE0 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC25A9BA21AE984400910AE0 /* Home.swift */; };
-		EC25A9BD21AE987D00910AE0 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC25A9BC21AE987D00910AE0 /* Book.swift */; };
 		EC2F21C521B7C4FE001447F9 /* Success.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2F21C421B7C4FE001447F9 /* Success.swift */; };
+		EC73496121C3B89A00080CF8 /* Theater.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC73496021C3B89A00080CF8 /* Theater.swift */; };
+		EC73496521C3B97700080CF8 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC73496421C3B97700080CF8 /* Movie.swift */; };
+		EC73496721C3C59F00080CF8 /* MovieViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC73496621C3C59F00080CF8 /* MovieViewCell.swift */; };
+		ECD30F2421C3F3B500E684F8 /* SeatNoRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD30F2321C3F3B400E684F8 /* SeatNoRealm.swift */; };
 		ECD7C2B721B5454C001EA095 /* MovieTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD7C2B621B5454C001EA095 /* MovieTableCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -36,8 +39,11 @@
 		EC1B09D521B526A400313DA2 /* AboutMovie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutMovie.swift; sourceTree = "<group>"; };
 		EC1F0B0721C1281C000DCB4B /* SeatNo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeatNo.swift; sourceTree = "<group>"; };
 		EC25A9BA21AE984400910AE0 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
-		EC25A9BC21AE987D00910AE0 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		EC2F21C421B7C4FE001447F9 /* Success.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Success.swift; sourceTree = "<group>"; };
+		EC73496021C3B89A00080CF8 /* Theater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theater.swift; sourceTree = "<group>"; };
+		EC73496421C3B97700080CF8 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		EC73496621C3C59F00080CF8 /* MovieViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewCell.swift; sourceTree = "<group>"; };
+		ECD30F2321C3F3B400E684F8 /* SeatNoRealm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeatNoRealm.swift; sourceTree = "<group>"; };
 		ECD7C2B621B5454C001EA095 /* MovieTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableCell.swift; sourceTree = "<group>"; };
 		EE62B0085BFA669A27E94AD5 /* Pods-Ticket.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ticket.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ticket/Pods-Ticket.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -92,21 +98,56 @@
 		EC1899AF21ABD15C006776ED /* Ticket */ = {
 			isa = PBXGroup;
 			children = (
-				EC1899B021ABD15C006776ED /* AppDelegate.swift */,
-				EC1899B221ABD15C006776ED /* ViewController.swift */,
-				EC1F0B0721C1281C000DCB4B /* SeatNo.swift */,
-				EC25A9BC21AE987D00910AE0 /* Book.swift */,
-				EC25A9BA21AE984400910AE0 /* Home.swift */,
-				ECD7C2B621B5454C001EA095 /* MovieTableCell.swift */,
-				EC1B09D321B5266900313DA2 /* MovieTableList.swift */,
-				EC1B09D521B526A400313DA2 /* AboutMovie.swift */,
-				EC2F21C421B7C4FE001447F9 /* Success.swift */,
-				EC1899B421ABD15C006776ED /* Main.storyboard */,
+				EC73496C21C3C64B00080CF8 /* Delegate */,
+				EC73496821C3C5EA00080CF8 /* Model */,
+				EC73496921C3C60B00080CF8 /* View */,
+				EC73496A21C3C61B00080CF8 /* Controller */,
 				EC1899B721ABD15C006776ED /* Assets.xcassets */,
 				EC1899B921ABD15C006776ED /* LaunchScreen.storyboard */,
 				EC1899BC21ABD15C006776ED /* Info.plist */,
 			);
 			path = Ticket;
+			sourceTree = "<group>";
+		};
+		EC73496821C3C5EA00080CF8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				ECD30F2321C3F3B400E684F8 /* SeatNoRealm.swift */,
+				EC73496021C3B89A00080CF8 /* Theater.swift */,
+				EC73496421C3B97700080CF8 /* Movie.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EC73496921C3C60B00080CF8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EC1899B421ABD15C006776ED /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EC73496A21C3C61B00080CF8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EC1899B221ABD15C006776ED /* ViewController.swift */,
+				EC25A9BA21AE984400910AE0 /* Home.swift */,
+				EC73496621C3C59F00080CF8 /* MovieViewCell.swift */,
+				ECD7C2B621B5454C001EA095 /* MovieTableCell.swift */,
+				EC1B09D321B5266900313DA2 /* MovieTableList.swift */,
+				EC1B09D521B526A400313DA2 /* AboutMovie.swift */,
+				EC1F0B0721C1281C000DCB4B /* SeatNo.swift */,
+				EC2F21C421B7C4FE001447F9 /* Success.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EC73496C21C3C64B00080CF8 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				EC1899B021ABD15C006776ED /* AppDelegate.swift */,
+			);
+			path = Delegate;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,11 +277,14 @@
 				EC2F21C521B7C4FE001447F9 /* Success.swift in Sources */,
 				EC1B09D421B5266900313DA2 /* MovieTableList.swift in Sources */,
 				EC1F0B0821C1281D000DCB4B /* SeatNo.swift in Sources */,
-				EC25A9BD21AE987D00910AE0 /* Book.swift in Sources */,
+				EC73496721C3C59F00080CF8 /* MovieViewCell.swift in Sources */,
 				EC1899B321ABD15C006776ED /* ViewController.swift in Sources */,
 				EC25A9BB21AE984400910AE0 /* Home.swift in Sources */,
 				ECD7C2B721B5454C001EA095 /* MovieTableCell.swift in Sources */,
 				EC1899B121ABD15C006776ED /* AppDelegate.swift in Sources */,
+				ECD30F2421C3F3B500E684F8 /* SeatNoRealm.swift in Sources */,
+				EC73496521C3B97700080CF8 /* Movie.swift in Sources */,
+				EC73496121C3B89A00080CF8 /* Theater.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

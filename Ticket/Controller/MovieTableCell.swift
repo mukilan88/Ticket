@@ -2,7 +2,7 @@
 //  MovieTableCell.swift
 //  Ticket
 //
-//  Created by AruniOS on 03/12/18.
+//  Created by Mukil on 03/12/18.
 //  Copyright © 2018 Class. All rights reserved.
 //
 

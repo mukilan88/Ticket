@@ -6,13 +6,12 @@ target 'Ticket' do
   use_frameworks!
 
   # Pods for Ticket
-	pod ‘Alamofire’
-	pod ‘SwiftyJSON’
-	pod ‘ObjectMapper’
-	pod ‘RealmSwift’
-	pod ‘FSPagerView’
-	
-	
-	
+	pod 'Alamofire'
+	pod 'SwiftyJSON'
+	pod 'ObjectMapper'
+	pod 'RealmSwift'
+    pod 'Realm'
+	pod 'FSPagerView'
+	pod 'Kingfisher'
 
 end
