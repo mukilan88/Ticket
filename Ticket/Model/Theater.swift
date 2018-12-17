@@ -11,14 +11,19 @@ import Realm
 import RealmSwift
 
 
-//class Theater: Object {
-//    
-//    @objc dynamic var theaterName : String?
-//    @objc dynamic var theaterImg : 
-//    
-//    
-//    override static func primaryKey()->String{
-//        return "SeatNum"
-//    }
-//}
+class Theater: Object {
+    
+ @objc dynamic var theaterID : String?
+    @objc dynamic var theaterNameRealm : String?
+    @objc dynamic var addressRealm : String?
+    @objc dynamic var avaiableSeatRealm = 0
+    @objc dynamic var dateRealm = 0
+    @objc dynamic var timeRealm = 0
+    @objc dynamic var amountRealm = 0
+    
+    
+    override static func primaryKey()->String{
+        return "theaterID"
+    }
+}
 

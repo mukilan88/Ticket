@@ -9,6 +9,7 @@ PODS:
   - RealmSwift (3.0.1):
     - Realm (= 3.0.1)
   - SwiftyJSON (3.1.4)
+  - YouTubePlayer (0.4.0)
 
 DEPENDENCIES:
   - Alamofire
@@ -18,6 +19,7 @@ DEPENDENCIES:
   - Realm
   - RealmSwift
   - SwiftyJSON
+  - YouTubePlayer
 
 SPEC CHECKSUMS:
   Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
@@ -27,7 +29,8 @@ SPEC CHECKSUMS:
   Realm: ba6144c74f835f7497791f6599d63a7755377b83
   RealmSwift: 7d13b1ac4b6022a13f841e3143e7789c9e40ad0d
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
+  YouTubePlayer: 028451f6772f372d4759866db99824c676ac1473
 
-PODFILE CHECKSUM: 98d83552bcf8d61b2ea82158640af114617ddf10
+PODFILE CHECKSUM: e5cd71209ac23e7202a38afb5494a0fec42f0665
 
 COCOAPODS: 1.2.0

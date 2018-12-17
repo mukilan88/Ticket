@@ -41,115 +41,56 @@
         </array>
     </customFonts>
     <scenes>
-        <!--MovieTableList-->
+        <!--TheaterTableList-->
         <scene sceneID="z7P-8y-cVI">
             <objects>
-                <viewController storyboardIdentifier="MovieTableList" title="MovieTableList" id="RyN-MD-cKO" customClass="MovieTableList" customModule="Ticket" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TheaterTableList" title="TheaterTableList" id="RyN-MD-cKO" customClass="TheaterTableList" customModule="Ticket" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="brt-YP-lfc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Klj-Yk-6SH" userLabel="TopBar">
-                                <rect key="frame" x="0.0" y="88" width="375" height="50"/>
-                                <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="vfW-jJ-dOU">
-                                        <rect key="frame" x="15" y="15" width="345" height="17"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="All" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="m9f-BC-nuo">
-                                                <rect key="frame" x="0.0" y="0.0" width="22.333333333333336" height="17"/>
-                                                <fontDescription key="fontDescription" name="Farah" family="Farah" pointSize="17"/>
-                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Movie" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="SRj-SZ-26C">
-                                                <rect key="frame" x="27.333333333333332" y="0.0" width="54" height="17"/>
-                                                <fontDescription key="fontDescription" name="Farah" family="Farah" pointSize="17"/>
-                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Events" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="fGb-d3-b0y">
-                                                <rect key="frame" x="86.333333333333314" y="0.0" width="61.666666666666686" height="17"/>
-                                                <fontDescription key="fontDescription" name="Farah" family="Farah" pointSize="17"/>
-                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Play" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="mSs-cg-gXj">
-                                                <rect key="frame" x="153" y="0.0" width="39.333333333333343" height="17"/>
-                                                <fontDescription key="fontDescription" name="Farah" family="Farah" pointSize="17"/>
-                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sports" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="1XD-Ao-Nqg">
-                                                <rect key="frame" x="197.33333333333331" y="0.0" width="58.333333333333343" height="17"/>
-                                                <fontDescription key="fontDescription" name="Farah" family="Farah" pointSize="17"/>
-                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Activities" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="2pd-Ey-dzU">
-                                                <rect key="frame" x="260.66666666666674" y="0.0" width="84.333333333333314" height="17"/>
-                                                <fontDescription key="fontDescription" name="Farah" family="Farah" pointSize="17"/>
-                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                    </stackView>
-                                </subviews>
-                                <color key="backgroundColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="vfW-jJ-dOU" secondAttribute="trailing" constant="15" id="Gvh-Yc-XyC"/>
-                                    <constraint firstItem="vfW-jJ-dOU" firstAttribute="top" secondItem="Klj-Yk-6SH" secondAttribute="top" constant="15" id="KdZ-fg-DtS"/>
-                                    <constraint firstAttribute="bottom" secondItem="vfW-jJ-dOU" secondAttribute="bottom" constant="18" id="h7w-Si-6yD"/>
-                                    <constraint firstAttribute="height" constant="50" id="s2X-YE-7LT"/>
-                                    <constraint firstItem="vfW-jJ-dOU" firstAttribute="leading" secondItem="Klj-Yk-6SH" secondAttribute="leading" constant="15" id="wxX-Ez-YY0"/>
-                                </constraints>
-                            </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="CTg-UB-b1S" userLabel="Movie List">
-                                <rect key="frame" x="0.0" y="138" width="375" height="591"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="CTg-UB-b1S" userLabel="Theater List">
+                                <rect key="frame" x="0.0" y="88" width="375" height="724"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MovieTableCell" rowHeight="128" id="eep-Ft-xKb" userLabel="Movie List Cell" customClass="MovieTableCell" customModule="Ticket" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="128"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TheaterTableCell" rowHeight="254" id="eep-Ft-xKb" userLabel="Theater List Cell" customClass="TheaterTableCell" customModule="Ticket" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="254"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="eep-Ft-xKb" id="aAQ-TU-GvW">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="127.66666666666667"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="253.66666666666666"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="gL0-8M-O2x">
-                                                    <rect key="frame" x="8" y="8" width="359" height="20"/>
+                                                    <rect key="frame" x="10" y="20" width="365" height="20"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="20" id="76a-CG-w9w"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="20"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="Z5k-tf-5AR">
-                                                    <rect key="frame" x="8" y="48" width="359" height="15"/>
-                                                    <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="15"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="email" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="iZx-7P-8H3">
-                                                    <rect key="frame" x="8" y="83" width="359" height="15"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="Z5k-tf-5AR">
+                                                    <rect key="frame" x="8" y="75" width="359" height="20"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="20" id="SGY-dE-jWB"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="15"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="gL0-8M-O2x" firstAttribute="top" secondItem="aAQ-TU-GvW" secondAttribute="topMargin" id="1Cd-be-Qub"/>
-                                                <constraint firstItem="iZx-7P-8H3" firstAttribute="top" secondItem="Z5k-tf-5AR" secondAttribute="bottom" constant="20" id="2qv-FI-TE6"/>
-                                                <constraint firstAttribute="trailing" secondItem="iZx-7P-8H3" secondAttribute="trailing" constant="8" id="68O-mP-1yZ"/>
-                                                <constraint firstItem="Z5k-tf-5AR" firstAttribute="top" secondItem="gL0-8M-O2x" secondAttribute="bottom" constant="20" id="Jtt-OA-wu4"/>
-                                                <constraint firstAttribute="trailing" secondItem="Z5k-tf-5AR" secondAttribute="trailing" constant="8" id="Sx0-IW-rnQ"/>
-                                                <constraint firstItem="gL0-8M-O2x" firstAttribute="leading" secondItem="aAQ-TU-GvW" secondAttribute="leadingMargin" id="Ujm-kU-nvA"/>
-                                                <constraint firstItem="gL0-8M-O2x" firstAttribute="trailing" secondItem="aAQ-TU-GvW" secondAttribute="trailingMargin" id="XCw-UA-EFG"/>
-                                                <constraint firstItem="Z5k-tf-5AR" firstAttribute="leading" secondItem="aAQ-TU-GvW" secondAttribute="leading" constant="8" id="Z6T-9J-ucL"/>
-                                                <constraint firstItem="iZx-7P-8H3" firstAttribute="leading" secondItem="aAQ-TU-GvW" secondAttribute="leading" constant="8" id="knc-ih-V1m"/>
+                                                <constraint firstItem="gL0-8M-O2x" firstAttribute="leading" secondItem="aAQ-TU-GvW" secondAttribute="leading" constant="10" id="48k-gb-nQ8"/>
+                                                <constraint firstItem="Z5k-tf-5AR" firstAttribute="top" secondItem="gL0-8M-O2x" secondAttribute="bottom" constant="35" id="50h-l9-nX6"/>
+                                                <constraint firstItem="Z5k-tf-5AR" firstAttribute="trailing" secondItem="aAQ-TU-GvW" secondAttribute="trailingMargin" id="Hfs-nU-KUc"/>
+                                                <constraint firstAttribute="trailing" secondItem="gL0-8M-O2x" secondAttribute="trailing" id="Nui-FE-VH7"/>
+                                                <constraint firstItem="gL0-8M-O2x" firstAttribute="top" secondItem="aAQ-TU-GvW" secondAttribute="top" constant="20" id="WiS-7p-GJ2"/>
+                                                <constraint firstItem="Z5k-tf-5AR" firstAttribute="leading" secondItem="aAQ-TU-GvW" secondAttribute="leadingMargin" id="lDR-jW-E2P"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="Name" destination="gL0-8M-O2x" id="e1j-SZ-g7M"/>
-                                            <outlet property="UName" destination="Z5k-tf-5AR" id="Az7-o3-b2u"/>
-                                            <outlet property="email" destination="iZx-7P-8H3" id="egF-RJ-6fH"/>
-                                            <segue destination="cvo-Y5-Oba" kind="show" id="ih9-KJ-2ga"/>
+                                            <outlet property="addressCell" destination="Z5k-tf-5AR" id="bOH-iF-sqA"/>
+                                            <outlet property="theaterNameCell" destination="gL0-8M-O2x" id="21C-Rg-Ydq"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -157,13 +98,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="CTg-UB-b1S" firstAttribute="top" secondItem="Klj-Yk-6SH" secondAttribute="bottom" id="650-hC-kTo"/>
-                            <constraint firstItem="CTg-UB-b1S" firstAttribute="leading" secondItem="oob-Q0-h3X" secondAttribute="leading" id="DBE-sI-0IV"/>
-                            <constraint firstItem="Klj-Yk-6SH" firstAttribute="trailing" secondItem="oob-Q0-h3X" secondAttribute="trailing" id="GWu-np-H4v"/>
-                            <constraint firstItem="oob-Q0-h3X" firstAttribute="bottom" secondItem="CTg-UB-b1S" secondAttribute="bottom" id="SLB-pc-Lc5"/>
-                            <constraint firstItem="Klj-Yk-6SH" firstAttribute="leading" secondItem="oob-Q0-h3X" secondAttribute="leading" id="YUM-Pg-XXd"/>
-                            <constraint firstItem="CTg-UB-b1S" firstAttribute="trailing" secondItem="oob-Q0-h3X" secondAttribute="trailing" id="b5j-xP-xfa"/>
-                            <constraint firstItem="Klj-Yk-6SH" firstAttribute="top" secondItem="oob-Q0-h3X" secondAttribute="top" id="xWJ-Ee-6eA"/>
+                            <constraint firstItem="CTg-UB-b1S" firstAttribute="leading" secondItem="oob-Q0-h3X" secondAttribute="leading" id="BpO-hZ-TRn"/>
+                            <constraint firstAttribute="bottom" secondItem="CTg-UB-b1S" secondAttribute="bottom" id="GFF-WT-1Nk"/>
+                            <constraint firstItem="CTg-UB-b1S" firstAttribute="top" secondItem="oob-Q0-h3X" secondAttribute="top" id="Hfm-4p-KSt"/>
+                            <constraint firstItem="CTg-UB-b1S" firstAttribute="trailing" secondItem="oob-Q0-h3X" secondAttribute="trailing" id="Vtg-FV-O6w"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="oob-Q0-h3X"/>
                     </view>
@@ -173,7 +111,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g92-3t-8Pb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2911" y="-2605"/>
+            <point key="canvasLocation" x="-2911.1999999999998" y="-2605.4187192118229"/>
         </scene>
         <!--History-->
         <scene sceneID="IUX-Ao-cfm">
@@ -268,37 +206,37 @@ VGhhbmsgWW91IEZvciAQQm9va2luZw
                                                 <rect key="frame" x="15" y="15" width="345" height="17"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="All" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Phj-yU-ZhR">
-                                                        <rect key="frame" x="0.0" y="0.0" width="22.333333333333336" height="17"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="21.666666666666664" height="17"/>
                                                         <fontDescription key="fontDescription" name="Farah" family="Farah" pointSize="17"/>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Movie" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="iy1-yo-PVa">
-                                                        <rect key="frame" x="27.333333333333332" y="0.0" width="54" height="17"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Theater" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="iy1-yo-PVa">
+                                                        <rect key="frame" x="26.666666666666664" y="0.0" width="66.333333333333343" height="17"/>
                                                         <fontDescription key="fontDescription" name="Farah" family="Farah" pointSize="17"/>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Events" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ga0-e7-zCD">
-                                                        <rect key="frame" x="86.333333333333314" y="0.0" width="61.666666666666686" height="17"/>
+                                                        <rect key="frame" x="98" y="0.0" width="58.666666666666657" height="17"/>
                                                         <fontDescription key="fontDescription" name="Farah" family="Farah" pointSize="17"/>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Play" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="iVE-QX-3zo">
-                                                        <rect key="frame" x="153" y="0.0" width="39.333333333333343" height="17"/>
+                                                        <rect key="frame" x="162" y="0.0" width="37.666666666666657" height="17"/>
                                                         <fontDescription key="fontDescription" name="Farah" family="Farah" pointSize="17"/>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sports" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Dg4-bD-tiw">
-                                                        <rect key="frame" x="197.33333333333331" y="0.0" width="58.333333333333343" height="17"/>
+                                                        <rect key="frame" x="204.66666666666669" y="0.0" width="55.666666666666686" height="17"/>
                                                         <fontDescription key="fontDescription" name="Farah" family="Farah" pointSize="17"/>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Activities" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="zez-nG-EeQ">
-                                                        <rect key="frame" x="260.66666666666674" y="0.0" width="84.333333333333314" height="17"/>
+                                                        <rect key="frame" x="265.33333333333326" y="0.0" width="79.666666666666686" height="17"/>
                                                         <fontDescription key="fontDescription" name="Farah" family="Farah" pointSize="17"/>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -337,36 +275,36 @@ VGhhbmsgWW91IEZvciAQQm9va2luZw
                                                 <rect key="frame" x="0.0" y="25" width="375" height="499"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="nCf-mO-lE6">
-                                                    <size key="itemSize" width="157" height="145"/>
+                                                    <size key="itemSize" width="292" height="251"/>
                                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                 </collectionViewFlowLayout>
                                                 <cells>
                                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MovieViewCell" id="Gt5-cL-5y5" customClass="MovieViewCell" customModule="Ticket" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="0.0" width="180" height="180"/>
+                                                        <rect key="frame" x="41.666666666666664" y="0.0" width="292" height="251"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                                            <rect key="frame" x="0.0" y="0.0" width="180" height="180"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="292" height="251"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                             <subviews>
                                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FRh-jt-9Yf">
-                                                                    <rect key="frame" x="10" y="10" width="160" height="150"/>
+                                                                    <rect key="frame" x="10" y="10" width="272" height="150"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="150" id="oeq-Ml-27S"/>
                                                                     </constraints>
                                                                 </imageView>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="aQB-eE-1jI">
-                                                                    <rect key="frame" x="0.0" y="160" width="180" height="20"/>
+                                                                    <rect key="frame" x="0.0" y="160" width="292" height="91"/>
                                                                     <subviews>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZoL-sn-g7g">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="87.666666666666671" height="20"/>
+                                                                            <rect key="frame" x="0.0" y="0.0" width="143.66666666666666" height="91"/>
                                                                             <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="20"/>
                                                                             <nil key="textColor"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gde-nZ-5mQ">
-                                                                            <rect key="frame" x="92.666666666666686" y="0.0" width="87.333333333333314" height="20"/>
+                                                                            <rect key="frame" x="148.66666666666663" y="0.0" width="143.33333333333337" height="91"/>
                                                                             <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="20"/>
                                                                             <nil key="textColor"/>
                                                                             <nil key="highlightedColor"/>
@@ -384,7 +322,7 @@ VGhhbmsgWW91IEZvciAQQm9va2luZw
                                                             <constraint firstItem="FRh-jt-9Yf" firstAttribute="top" secondItem="Gt5-cL-5y5" secondAttribute="top" constant="10" id="Xgb-LY-IM1"/>
                                                             <constraint firstItem="aQB-eE-1jI" firstAttribute="top" secondItem="FRh-jt-9Yf" secondAttribute="bottom" id="Xvb-ou-Qjv"/>
                                                         </constraints>
-                                                        <size key="customSize" width="180" height="180"/>
+                                                        <size key="customSize" width="292" height="251"/>
                                                         <connections>
                                                             <outlet property="movieImgCell" destination="FRh-jt-9Yf" id="uyZ-cv-swa"/>
                                                             <outlet property="movieNameCell" destination="ZoL-sn-g7g" id="cdp-xB-9Ab"/>
@@ -432,11 +370,10 @@ VGhhbmsgWW91IEZvciAQQm9va2luZw
                     </view>
                     <navigationItem key="navigationItem" id="mc9-kU-tuW"/>
                     <connections>
-                        <outlet property="mMovie" destination="iy1-yo-PVa" id="fBu-Dt-RSg"/>
                         <outlet property="movieCollViewList" destination="Tdz-za-Yda" id="MU3-gn-vaV"/>
                         <outlet property="slideView" destination="BBN-oq-BrK" id="ojd-vq-iWq"/>
+                        <outlet property="theaterList" destination="iy1-yo-PVa" id="fBu-Dt-RSg"/>
                         <segue destination="RyN-MD-cKO" kind="show" identifier="" id="P77-jj-Ujg"/>
-                        <segue destination="cvo-Y5-Oba" kind="show" id="Saf-In-6Ww"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xc4-IH-xaL" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -460,7 +397,7 @@ VGhhbmsgWW91IEZvciAQQm9va2luZw
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="142-Nl-vEc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-5794" y="-1740"/>
+            <point key="canvasLocation" x="-5434" y="-2606"/>
         </scene>
         <!--AboutMovie-->
         <scene sceneID="QmK-a0-AHS">
@@ -470,15 +407,14 @@ VGhhbmsgWW91IEZvciAQQm9va2luZw
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T0N-IG-X4G" userLabel="YouTube">
-                                <rect key="frame" x="0.0" y="88" width="375" height="200"/>
-                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T0N-IG-X4G" userLabel="YouTube" customClass="YouTubePlayerView" customModule="YouTubePlayer">
+                                <rect key="frame" x="0.0" y="44" width="375" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="sap-Mi-eLM"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1EI-HM-J4G" userLabel="MovieName">
-                                <rect key="frame" x="0.0" y="288" width="375" height="100"/>
+                                <rect key="frame" x="0.0" y="244" width="375" height="100"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="k0L-UA-UvL">
                                         <rect key="frame" x="20" y="0.0" width="42" height="35"/>
@@ -521,7 +457,7 @@ VGhhbmsgWW91IEZvciAQQm9va2luZw
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bfl-sY-qhS" userLabel="AboutMovie">
-                                <rect key="frame" x="0.0" y="388" width="375" height="291"/>
+                                <rect key="frame" x="0.0" y="344" width="375" height="384"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About The Movie" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="m1b-8y-dUn">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="30"/>
@@ -532,8 +468,8 @@ VGhhbmsgWW91IEZvciAQQm9va2luZw
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="30" baselineAdjustment="none" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AwL-Fk-mO6">
-                                        <rect key="frame" x="20" y="50" width="335" height="221"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="30" baselineAdjustment="none" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AwL-Fk-mO6">
+                                        <rect key="frame" x="20" y="50" width="335" height="314"/>
                                         <string key="text">2.0 is a 2018 Indian science fiction action film[3] in Tamil, written and directed by S. Shankar. Produced by Subaskaran under the banner of Lyca Productions, the film is a standalone sequel to Enthiran (2010), featuring Rajinikanth reprising the roles of Dr. Vaseegaran and Chitti, alongside Akshay Kumar and Amy Jackson. Sudhanshu Pandey, Adil Hussain, Kalabhavan Shajohn, and K. Ganesh appear in supporting roles. The film follows the conflict between Chitti, the once dismantled android, and Pakshi Rajan, an ornithologist who seeks vengeance on smartphone users to prevent avian population decline. The soundtrack is composed by A. R. Rahman, with lyrics written by Madhan Karky and Na. Muthukumar.
 
 </string>
@@ -553,7 +489,7 @@ VGhhbmsgWW91IEZvciAQQm9va2luZw
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="REZ-oo-LiF" userLabel="Book">
-                                <rect key="frame" x="0.0" y="679" width="375" height="50"/>
+                                <rect key="frame" x="0.0" y="728" width="375" height="50"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Leg-5Z-5qU">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
@@ -598,22 +534,23 @@ VGhhbmsgWW91IEZvciAQQm9va2luZw
                     </view>
                     <connections>
                         <outlet property="likeLable" destination="30F-1A-XQt" id="hZX-Du-t6X"/>
+                        <outlet property="videoView" destination="T0N-IG-X4G" id="d2t-gg-Ux6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eKe-7e-0YF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2911" y="-1740"/>
         </scene>
-        <!--SeatNo-->
+        <!--SeatSelect-->
         <scene sceneID="2LV-Df-08j">
             <objects>
-                <viewController id="iSS-Tj-xQo" userLabel="SeatNo" customClass="SeatNo" customModule="Ticket" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="iSS-Tj-xQo" userLabel="SeatSelect" customClass="SeatSelect" customModule="Ticket" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="foy-LO-jkk">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L8V-LA-jI6" userLabel="BottomView">
-                                <rect key="frame" x="25" y="709" width="325" height="20"/>
+                                <rect key="frame" x="25" y="758" width="325" height="20"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Screen" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AZT-9X-2q2">
                                         <rect key="frame" x="0.0" y="0.0" width="325" height="20"/>
@@ -629,16 +566,16 @@ VGhhbmsgWW91IEZvciAQQm9va2luZw
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BA5-20-SHz" userLabel="SeatNo">
-                                <rect key="frame" x="0.0" y="88" width="375" height="621"/>
+                                <rect key="frame" x="0.0" y="44" width="375" height="714"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="LLn-WF-tmO">
-                                        <rect key="frame" x="2" y="2" width="371" height="617"/>
+                                        <rect key="frame" x="2" y="2" width="371" height="710"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="myR-1o-3pY">
-                                                <rect key="frame" x="0.0" y="0.0" width="371" height="86.333333333333343"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="371" height="99.666666666666657"/>
                                                 <subviews>
                                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ylZ-w1-90I">
-                                                        <rect key="frame" x="0.0" y="0.0" width="91.333333333333329" height="86.333333333333343"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="91.333333333333329" height="99.666666666666657"/>
                                                         <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                                                         <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="40"/>
                                                         <state key="normal" title="A1">
@@ -649,7 +586,7 @@ VGhhbmsgWW91IEZvciAQQm9va2luZw
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="llG-l7-OxA">
-                                                        <rect key="frame" x="93.333333333333343" y="0.0" width="91.333333333333343" height="86.333333333333343"/>
+                                                        <rect key="frame" x="93.333333333333343" y="0.0" width="91.333333333333343" height="99.666666666666657"/>
                                                         <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                                                         <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="40"/>
                                                         <state key="normal" title="A2">
@@ -660,7 +597,7 @@ VGhhbmsgWW91IEZvciAQQm9va2luZw
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="khk-o2-gBU">
-                                                        <rect key="frame" x="186.66666666666669" y="0.0" width="91.000000000000057" height="86.333333333333343"/>
+                                                        <rect key="frame" x="186.66666666666669" y="0.0" width="91.000000000000057" height="99.666666666666657"/>
                                                         <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                                                         <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="40"/>
                                                         <state key="normal" title="A3">
@@ -671,7 +608,7 @@ VGhhbmsgWW91IEZvciAQQm9va2luZw
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v2e-30-IO7">
-                                                        <rect key="frame" x="279.66666666666674" y="0.0" width="91.333333333333314" height="86.333333333333343"/>
+                                                        <rect key="frame" x="279.66666666666674" y="0.0" width="91.333333333333314" height="99.666666666666657"/>
                                                         <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                                                         <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="40"/>
                                                         <state key="normal" title="A4">
@@ -684,10 +621,10 @@ VGhhbmsgWW91IEZvciAQQm9va2luZw
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="fEo-i0-PeZ">
-                                                <rect key="frame" x="0.0" y="88.333333333333357" width="371" height="86.666666666666643"/>
+                                                <rect key="frame" x="0.0" y="101.66666666666666" width="371" height="99.666666666666686"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eTD-FF-qrz">
-                                                        <rect key="frame" x="0.0" y="0.0" width="91.333333333333329" height="86.666666666666657"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="91.333333333333329" height="99.666666666666686"/>
                                                         <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                                                         <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="40"/>
                                                         <state key="normal" title="B1">
@@ -695,7 +632,7 @@ VGhhbmsgWW91IEZvciAQQm9va2luZw
                                                         </state>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MTJ-tT-aXt">
-                                                        <rect key="frame" x="93.333333333333343" y="0.0" width="91.333333333333343" height="86.666666666666657"/>
+                                                        <rect key="frame" x="93.333333333333343" y="0.0" width="91.333333333333343" height="99.666666666666686"/>
                                                         <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                                                         <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="40"/>
                                                         <state key="normal" title="B2">
@@ -703,7 +640,7 @@ VGhhbmsgWW91IEZvciAQQm9va2luZw
                                                         </state>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="he9-O2-Ydg">
-                                                        <rect key="frame" x="186.66666666666669" y="0.0" width="91.000000000000057" height="86.666666666666657"/>
+                                                        <rect key="frame" x="186.66666666666669" y="0.0" width="91.000000000000057" height="99.666666666666686"/>
                                                         <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                                                         <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="40"/>
                                                         <state key="normal" title="B3">
@@ -711,7 +648,7 @@ VGhhbmsgWW91IEZvciAQQm9va2luZw
                                                         </state>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1e4-cY-au0">
-                                                        <rect key="frame" x="279.66666666666674" y="0.0" width="91.333333333333314" height="86.666666666666657"/>
+                                                        <rect key="frame" x="279.66666666666674" y="0.0" width="91.333333333333314" height="99.666666666666686"/>
                                                         <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                                                         <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="40"/>
                                                         <state key="normal" title="B4">
@@ -721,10 +658,10 @@ VGhhbmsgWW91IEZvciAQQm9va2luZw
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="s8t-tA-VBK">
-                                                <rect key="frame" x="0.0" y="177" width="371" height="86.333333333333314"/>
+                                                <rect key="frame" x="0.0" y="203.33333333333337" width="371" height="99.666666666666629"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GNk-4m-mwX">
-                                                        <rect key="frame" x="0.0" y="0.0" width="91.333333333333329" height="86.333333333333314"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="91.333333333333329" height="99.666666666666657"/>
                                                         <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                                                         <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="40"/>
                                                         <state key="normal" title="C1">
@@ -732,7 +669,7 @@ VGhhbmsgWW91IEZvciAQQm9va2luZw
                                                         </state>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l7B-IR-c34">
-                                                        <rect key="frame" x="93.333333333333343" y="0.0" width="91.333333333333343" height="86.333333333333314"/>
+                                                        <rect key="frame" x="93.333333333333343" y="0.0" width="91.333333333333343" height="99.666666666666657"/>
                                                         <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                                                         <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="40"/>
                                                         <state key="normal" title="C2">
@@ -740,7 +677,7 @@ VGhhbmsgWW91IEZvciAQQm9va2luZw
                                                         </state>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LSP-gH-6wH">
-                                                        <rect key="frame" x="186.66666666666669" y="0.0" width="91.000000000000057" height="86.333333333333314"/>
+                                                        <rect key="frame" x="186.66666666666669" y="0.0" width="91.000000000000057" height="99.666666666666657"/>
                                                         <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                                                         <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="40"/>
                                                         <state key="normal" title="C3">
@@ -748,7 +685,7 @@ VGhhbmsgWW91IEZvciAQQm9va2luZw
                                                         </state>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qex-da-Ccg">
-                                                        <rect key="frame" x="279.66666666666674" y="0.0" width="91.333333333333314" height="86.333333333333314"/>
+                                                        <rect key="frame" x="279.66666666666674" y="0.0" width="91.333333333333314" height="99.666666666666657"/>
                                                         <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                                                         <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="40"/>
                                                         <state key="normal" title="C4">
@@ -758,10 +695,10 @@ VGhhbmsgWW91IEZvciAQQm9va2luZw
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="5u1-ck-UaQ">
-                                                <rect key="frame" x="0.0" y="265.33333333333331" width="371" height="86.333333333333371"/>
+                                                <rect key="frame" x="0.0" y="305" width="371" height="100"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pN6-9Q-EpA">
-                                                        <rect key="frame" x="0.0" y="0.0" width="91.333333333333329" height="86.333333333333371"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="91.333333333333329" height="100"/>
                                                         <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                                                         <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="40"/>
                                                         <state key="normal" title="D1">
@@ -769,7 +706,7 @@ VGhhbmsgWW91IEZvciAQQm9va2luZw
                                                         </state>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bW5-OM-C8W">
-                                                        <rect key="frame" x="93.333333333333343" y="0.0" width="91.333333333333343" height="86.333333333333371"/>
+                                                        <rect key="frame" x="93.333333333333343" y="0.0" width="91.333333333333343" height="100"/>
                                                         <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                                                         <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="40"/>
                                                         <state key="normal" title="D2">
@@ -777,7 +714,7 @@ VGhhbmsgWW91IEZvciAQQm9va2luZw
                                                         </state>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N4v-0E-BuS">
-                                                        <rect key="frame" x="186.66666666666669" y="0.0" width="91.000000000000057" height="86.333333333333371"/>
+                                                        <rect key="frame" x="186.66666666666669" y="0.0" width="91.000000000000057" height="100"/>
                                                         <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                                                         <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="40"/>
                                                         <state key="normal" title="D3">
@@ -785,7 +722,7 @@ VGhhbmsgWW91IEZvciAQQm9va2luZw
                                                         </state>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6ph-L8-iR9">
-                                                        <rect key="frame" x="279.66666666666674" y="0.0" width="91.333333333333314" height="86.333333333333371"/>
+                                                        <rect key="frame" x="279.66666666666674" y="0.0" width="91.333333333333314" height="100"/>
                                                         <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                                                         <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="40"/>
                                                         <state key="normal" title="D4">
@@ -795,10 +732,10 @@ VGhhbmsgWW91IEZvciAQQm9va2luZw
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="Xzb-DZ-ycf">
-                                                <rect key="frame" x="0.0" y="353.66666666666674" width="371" height="86.333333333333314"/>
+                                                <rect key="frame" x="0.0" y="407" width="371" height="99.666666666666629"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yJR-o9-ysO">
-                                                        <rect key="frame" x="0.0" y="0.0" width="91.333333333333329" height="86.333333333333314"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="91.333333333333329" height="99.666666666666629"/>
                                                         <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                                                         <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="40"/>
                                                         <state key="normal" title="E1">
@@ -806,7 +743,7 @@ VGhhbmsgWW91IEZvciAQQm9va2luZw
                                                         </state>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RFl-pM-hG4">
-                                                        <rect key="frame" x="93.333333333333343" y="0.0" width="91.333333333333343" height="86.333333333333314"/>
+                                                        <rect key="frame" x="93.333333333333343" y="0.0" width="91.333333333333343" height="99.666666666666629"/>
                                                         <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                                                         <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="40"/>
                                                         <state key="normal" title="E2">
@@ -814,7 +751,7 @@ VGhhbmsgWW91IEZvciAQQm9va2luZw
                                                         </state>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GUu-xA-r2n">
-                                                        <rect key="frame" x="186.66666666666669" y="0.0" width="91.000000000000057" height="86.333333333333314"/>
+                                                        <rect key="frame" x="186.66666666666669" y="0.0" width="91.000000000000057" height="99.666666666666629"/>
                                                         <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                                                         <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="40"/>
                                                         <state key="normal" title="E3">
@@ -822,7 +759,7 @@ VGhhbmsgWW91IEZvciAQQm9va2luZw
                                                         </state>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mCz-2r-7k2">
-                                                        <rect key="frame" x="279.66666666666674" y="0.0" width="91.333333333333314" height="86.333333333333314"/>
+                                                        <rect key="frame" x="279.66666666666674" y="0.0" width="91.333333333333314" height="99.666666666666629"/>
                                                         <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                                                         <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="40"/>
                                                         <state key="normal" title="E4">
@@ -832,10 +769,10 @@ VGhhbmsgWW91IEZvciAQQm9va2luZw
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="c9M-7m-azJ">
-                                                <rect key="frame" x="0.0" y="442" width="371" height="86.666666666666629"/>
+                                                <rect key="frame" x="0.0" y="508.66666666666663" width="371" height="99.666666666666742"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mrj-QC-vKQ">
-                                                        <rect key="frame" x="0.0" y="0.0" width="91.333333333333329" height="86.666666666666629"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="91.333333333333329" height="99.666666666666742"/>
                                                         <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                                                         <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="40"/>
                                                         <state key="normal" title="F1">
@@ -843,7 +780,7 @@ VGhhbmsgWW91IEZvciAQQm9va2luZw
                                                         </state>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8gd-9C-rr2">
-                                                        <rect key="frame" x="93.333333333333343" y="0.0" width="91.333333333333343" height="86.666666666666629"/>
+                                                        <rect key="frame" x="93.333333333333343" y="0.0" width="91.333333333333343" height="99.666666666666742"/>
                                                         <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                                                         <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="40"/>
                                                         <state key="normal" title="F2">
@@ -851,7 +788,7 @@ VGhhbmsgWW91IEZvciAQQm9va2luZw
                                                         </state>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wV7-hS-Xk7">
-                                                        <rect key="frame" x="186.66666666666669" y="0.0" width="91.000000000000057" height="86.666666666666629"/>
+                                                        <rect key="frame" x="186.66666666666669" y="0.0" width="91.000000000000057" height="99.666666666666742"/>
                                                         <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                                                         <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="40"/>
                                                         <state key="normal" title="F3">
@@ -859,7 +796,7 @@ VGhhbmsgWW91IEZvciAQQm9va2luZw
                                                         </state>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rrk-E9-1a0">
-                                                        <rect key="frame" x="279.66666666666674" y="0.0" width="91.333333333333314" height="86.666666666666629"/>
+                                                        <rect key="frame" x="279.66666666666674" y="0.0" width="91.333333333333314" height="99.666666666666742"/>
                                                         <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                                                         <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="40"/>
                                                         <state key="normal" title="F4">
@@ -869,10 +806,10 @@ VGhhbmsgWW91IEZvciAQQm9va2luZw
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="WnT-vd-XLg">
-                                                <rect key="frame" x="0.0" y="530.66666666666652" width="371" height="86.333333333333371"/>
+                                                <rect key="frame" x="0.0" y="610.33333333333348" width="371" height="99.666666666666629"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dIL-Rk-x5o">
-                                                        <rect key="frame" x="0.0" y="0.0" width="91.333333333333329" height="86.333333333333371"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="91.333333333333329" height="99.666666666666629"/>
                                                         <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                                                         <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="40"/>
                                                         <state key="normal" title="G1">
@@ -880,7 +817,7 @@ VGhhbmsgWW91IEZvciAQQm9va2luZw
                                                         </state>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CwF-5s-gn6">
-                                                        <rect key="frame" x="93.333333333333343" y="0.0" width="91.333333333333343" height="86.333333333333371"/>
+                                                        <rect key="frame" x="93.333333333333343" y="0.0" width="91.333333333333343" height="99.666666666666629"/>
                                                         <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                                                         <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="40"/>
                                                         <state key="normal" title="G2">
@@ -888,7 +825,7 @@ VGhhbmsgWW91IEZvciAQQm9va2luZw
                                                         </state>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cRH-Wb-dSb">
-                                                        <rect key="frame" x="186.66666666666669" y="0.0" width="91.000000000000057" height="86.333333333333371"/>
+                                                        <rect key="frame" x="186.66666666666669" y="0.0" width="91.000000000000057" height="99.666666666666629"/>
                                                         <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                                                         <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="40"/>
                                                         <state key="normal" title="G3">
@@ -896,7 +833,7 @@ VGhhbmsgWW91IEZvciAQQm9va2luZw
                                                         </state>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zZZ-0b-6Rd">
-                                                        <rect key="frame" x="279.66666666666674" y="0.0" width="91.333333333333314" height="86.333333333333371"/>
+                                                        <rect key="frame" x="279.66666666666674" y="0.0" width="91.333333333333314" height="99.666666666666629"/>
                                                         <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                                                         <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="40"/>
                                                         <state key="normal" title="G4">
@@ -962,6 +899,11 @@ VGhhbmsgWW91IEZvciAQQm9va2luZw
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="faG-rd-pMJ">
                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -974,7 +916,6 @@ VGhhbmsgWW91IEZvciAQQm9va2luZw
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Saf-In-6Ww"/>
         <segue reference="W9y-HM-ioO"/>
     </inferredMetricsTieBreakers>
 </document>

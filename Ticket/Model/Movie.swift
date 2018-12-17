@@ -11,11 +11,15 @@ import Realm
 import RealmSwift
 
 class Movie:Object {
+    
+    @objc dynamic var movieID : String?
     @objc dynamic var movieNameRealm : String?
     @objc dynamic var movieImgRealm : String?
     @objc dynamic var movieRatingRealm = 0
+    @objc dynamic var theaterID : String?
     
     override static func primaryKey() -> String{
-        return "movieNameRealm"
+        return "movieID"
     }
+    
 }

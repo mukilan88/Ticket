@@ -10,20 +10,20 @@ import UIKit
 import Realm
 import RealmSwift
 
-class SeatNo: UIViewController {
+class SeatSelect: UIViewController {
 
     @IBOutlet weak var seatNum: UIButton!
     var selectSeatOn = true
-    var SavedList : Results<SeatNoRealm>!
+    var SavedList : Results<Seat>!
     var i = 0
     override func viewDidLoad() {
         super.viewDidLoad()
         GETSAVEDDATAS()
     }
     func GETSAVEDDATAS(){
-        SavedList = MyRealm.objects(SeatNoRealm.self)
+        SavedList = MyRealm.objects(Seat.self)
         while i<SavedList.count{
-            print("SAVED Seat No>>>>>>  ",SavedList[i].SeatNum ?? "")
+            print("SAVED Seat No>>>>>>  ",SavedList[i].seatNumRealm ?? "")
             i = i+1
         }
     }
@@ -35,7 +35,7 @@ class SeatNo: UIViewController {
             view.backgroundColor = .red
         }
         try! MyRealm.write {
-            MyRealm.create(SeatNoRealm.self, value: (seatNum).self,update: true)
+            MyRealm.create(Seat.self, value: (seatNum).self,update: true)
         }
         GETSAVEDDATAS()
     }

@@ -8,11 +8,11 @@
 
 import UIKit
 
-class MovieTableCell: UITableViewCell {
+class TheaterTableCell: UITableViewCell {
    
-    @IBOutlet var Name: UILabel!
-    @IBOutlet var UName: UILabel!
-    @IBOutlet var email: UILabel!
+    @IBOutlet var theaterNameCell: UILabel!
+    @IBOutlet var addressCell: UILabel!
+
     
     override func awakeFromNib() {
         super.awakeFromNib()

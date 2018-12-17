@@ -13,5 +13,6 @@ target 'Ticket' do
     pod 'Realm'
 	pod 'FSPagerView'
 	pod 'Kingfisher'
+	pod ‘YouTubePlayer’
 
 end
