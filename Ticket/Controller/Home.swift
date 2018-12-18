@@ -64,8 +64,8 @@ class Home: UIViewController, FSPagerViewDelegate, FSPagerViewDataSource, UIColl
         return self.movieCollection.count
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        //print(">>>>>>>",theaterList)
         let dict = self.movieCollection[indexPath.row]
+        print(">>>>>>",dict.theaterID)
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MovieViewCell", for: indexPath) as! MovieViewCell
         let url = URL.init(string: dict.movieImgRealm ?? "")
         cell.movieImgCell?.kf.setImage(with: url)
