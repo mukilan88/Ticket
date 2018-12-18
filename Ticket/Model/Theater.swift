@@ -13,7 +13,7 @@ import RealmSwift
 
 class Theater: Object {
     
- @objc dynamic var theaterID : String?
+    @objc dynamic var theaterID : String?
     @objc dynamic var theaterNameRealm : String?
     @objc dynamic var addressRealm : String?
     @objc dynamic var avaiableSeatRealm = 0

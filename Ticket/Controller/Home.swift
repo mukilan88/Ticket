@@ -36,11 +36,11 @@ class Home: UIViewController, FSPagerViewDelegate, FSPagerViewDataSource, UIColl
         super.viewDidLoad()
         //movie collection
         try! MyRealm.write {
-            MyRealm.create(Movie.self, value: ["movieID":"1","theaterID":"1","movieNameRealm":"2.0","movieImgRealm":"https://www.hindustantimes.com/rf/image_size_960x540/HT/p2/2018/09/13/Pictures/_c4607032-b705-11e8-ab60-f008577e130d.JPG","movieRatingRealm":8], update: true)
-            MyRealm.create(Movie.self, value: ["movieID":"2","movieNameRealm":"Sarkar","movieImgRealm":"https://www.thenewsminute.com/sites/default/files/styles/news_detail/public/vijay_sarkar_DN_750.jpg?itok=9tGu7SD6","movieRatingRealm":7], update: true)
-            MyRealm.create(Movie.self, value: ["movieID":"3","movieNameRealm":"ThuppakkiMunai","movieImgRealm":"https://www.onlykollywood.com/wp-content/uploads/2018/12/thuppakki-munai-movie-review.jpg","movieRatingRealm":4], update: true)
-            MyRealm.create(Movie.self, value: ["movieID":"4","movieNameRealm":"Johnny","movieImgRealm":"https://i.ytimg.com/vi/_rF9emhWjiU/maxresdefault.jpg","movieRatingRealm":3], update: true)
-            MyRealm.create(Movie.self, value: ["movieID":"5","movieNameRealm":"Raatchasan","movieImgRealm":"https://i.ytimg.com/vi/hc7HlQVXnbM/maxresdefault.jpg","movieRatingRealm":10], update: true)
+            MyRealm.create(Movie.self, value: ["movieID":"1","theaterID":["1","3","5"],"movieNameRealm":"2.0","movieImgRealm":"https://www.hindustantimes.com/rf/image_size_960x540/HT/p2/2018/09/13/Pictures/_c4607032-b705-11e8-ab60-f008577e130d.JPG","movieRatingRealm":8], update: true)
+            MyRealm.create(Movie.self, value: ["movieID":"2","theaterID":["2","4","6"],"movieNameRealm":"Sarkar","movieImgRealm":"https://www.thenewsminute.com/sites/default/files/styles/news_detail/public/vijay_sarkar_DN_750.jpg?itok=9tGu7SD6","movieRatingRealm":7], update: true)
+            MyRealm.create(Movie.self, value: ["movieID":"3","theaterID":["7","9","5"],"movieNameRealm":"ThuppakkiMunai","movieImgRealm":"https://www.onlykollywood.com/wp-content/uploads/2018/12/thuppakki-munai-movie-review.jpg","movieRatingRealm":4], update: true)
+            MyRealm.create(Movie.self, value: ["movieID":"4","theaterID":["4","6","8"],"movieNameRealm":"Johnny","movieImgRealm":"https://i.ytimg.com/vi/_rF9emhWjiU/maxresdefault.jpg","movieRatingRealm":3], update: true)
+            MyRealm.create(Movie.self, value: ["movieID":"5","theaterID":["2","10","1"],"movieNameRealm":"Raatchasan","movieImgRealm":"https://i.ytimg.com/vi/hc7HlQVXnbM/maxresdefault.jpg","movieRatingRealm":10], update: true)
         }
         movieCollection = MyRealm.objects(Movie.self)
         movieCollViewList.dataSource = self
@@ -64,6 +64,7 @@ class Home: UIViewController, FSPagerViewDelegate, FSPagerViewDataSource, UIColl
         return self.movieCollection.count
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        //print(">>>>>>>",theaterList)
         let dict = self.movieCollection[indexPath.row]
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MovieViewCell", for: indexPath) as! MovieViewCell
         let url = URL.init(string: dict.movieImgRealm ?? "")

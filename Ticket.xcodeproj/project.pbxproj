@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		873A56254F668EE3A7E98EDC /* Pods_Ticket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76FC391935627A081B6611C2 /* Pods_Ticket.framework */; };
 		EC1899B121ABD15C006776ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1899B021ABD15C006776ED /* AppDelegate.swift */; };
-		EC1899B321ABD15C006776ED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1899B221ABD15C006776ED /* ViewController.swift */; };
+		EC1899B321ABD15C006776ED /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1899B221ABD15C006776ED /* Search.swift */; };
 		EC1899B621ABD15C006776ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC1899B421ABD15C006776ED /* Main.storyboard */; };
 		EC1899B821ABD15C006776ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC1899B721ABD15C006776ED /* Assets.xcassets */; };
 		EC1899BB21ABD15C006776ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC1899B921ABD15C006776ED /* LaunchScreen.storyboard */; };
@@ -18,6 +18,7 @@
 		EC1F0B0821C1281D000DCB4B /* SeatSelect.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1F0B0721C1281C000DCB4B /* SeatSelect.swift */; };
 		EC25A9BB21AE984400910AE0 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC25A9BA21AE984400910AE0 /* Home.swift */; };
 		EC2F21C521B7C4FE001447F9 /* Success.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2F21C421B7C4FE001447F9 /* Success.swift */; };
+		EC46795C21C931D6009FC13E /* SearchTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC46795B21C931D6009FC13E /* SearchTableCell.swift */; };
 		EC73496121C3B89A00080CF8 /* Theater.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC73496021C3B89A00080CF8 /* Theater.swift */; };
 		EC73496521C3B97700080CF8 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC73496421C3B97700080CF8 /* Movie.swift */; };
 		EC73496721C3C59F00080CF8 /* MovieViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC73496621C3C59F00080CF8 /* MovieViewCell.swift */; };
@@ -30,7 +31,7 @@
 		76FC391935627A081B6611C2 /* Pods_Ticket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ticket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC1899AD21ABD15C006776ED /* Ticket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ticket.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC1899B021ABD15C006776ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EC1899B221ABD15C006776ED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EC1899B221ABD15C006776ED /* Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
 		EC1899B521ABD15C006776ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EC1899B721ABD15C006776ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC1899BA21ABD15C006776ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -40,6 +41,7 @@
 		EC1F0B0721C1281C000DCB4B /* SeatSelect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeatSelect.swift; sourceTree = "<group>"; };
 		EC25A9BA21AE984400910AE0 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		EC2F21C421B7C4FE001447F9 /* Success.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Success.swift; sourceTree = "<group>"; };
+		EC46795B21C931D6009FC13E /* SearchTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableCell.swift; sourceTree = "<group>"; };
 		EC73496021C3B89A00080CF8 /* Theater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theater.swift; sourceTree = "<group>"; };
 		EC73496421C3B97700080CF8 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		EC73496621C3C59F00080CF8 /* MovieViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewCell.swift; sourceTree = "<group>"; };
@@ -130,7 +132,8 @@
 		EC73496A21C3C61B00080CF8 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				EC1899B221ABD15C006776ED /* ViewController.swift */,
+				EC1899B221ABD15C006776ED /* Search.swift */,
+				EC46795B21C931D6009FC13E /* SearchTableCell.swift */,
 				EC25A9BA21AE984400910AE0 /* Home.swift */,
 				EC73496621C3C59F00080CF8 /* MovieViewCell.swift */,
 				ECD7C2B621B5454C001EA095 /* TheaterTableCell.swift */,
@@ -274,11 +277,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC1B09D621B526A400313DA2 /* AboutMovie.swift in Sources */,
+				EC46795C21C931D6009FC13E /* SearchTableCell.swift in Sources */,
 				EC2F21C521B7C4FE001447F9 /* Success.swift in Sources */,
 				EC1B09D421B5266900313DA2 /* TheaterTableList.swift in Sources */,
 				EC1F0B0821C1281D000DCB4B /* SeatSelect.swift in Sources */,
 				EC73496721C3C59F00080CF8 /* MovieViewCell.swift in Sources */,
-				EC1899B321ABD15C006776ED /* ViewController.swift in Sources */,
+				EC1899B321ABD15C006776ED /* Search.swift in Sources */,
 				EC25A9BB21AE984400910AE0 /* Home.swift in Sources */,
 				ECD7C2B721B5454C001EA095 /* TheaterTableCell.swift in Sources */,
 				EC1899B121ABD15C006776ED /* AppDelegate.swift in Sources */,

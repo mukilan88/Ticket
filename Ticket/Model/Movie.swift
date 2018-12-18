@@ -16,7 +16,7 @@ class Movie:Object {
     @objc dynamic var movieNameRealm : String?
     @objc dynamic var movieImgRealm : String?
     @objc dynamic var movieRatingRealm = 0
-    @objc dynamic var theaterID : String?
+    var theaterID = List<String>()
     
     override static func primaryKey() -> String{
         return "movieID"
