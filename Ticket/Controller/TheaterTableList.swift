@@ -18,20 +18,11 @@ class TheaterTableList: UIViewController, UITableViewDataSource, UITableViewDele
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        //mainTable is named as table cell drag and droped
         self.mainTable.dataSource = self
-        try! MyRealm.write {
-            MyRealm.create(Theater.self, value: ["theaterID" :"1", "theaterNameRealm":"Sangam Cinemas 4K Dolby Atmos", "addressRealm":"Kilpauk", "avaiableSeatRealm":15, "dateRealm":20, "timeRealm":8, "amountRealm":120], update:true)
-            MyRealm.create(Theater.self, value: ["theaterID" :"2","theaterNameRealm":"DeviCineplex", "addressRealm":"Anna Salai", "avaiableSeatRealm":18, "dateRealm":20, "timeRealm":11, "amountRealm":120], update:true)
-            MyRealm.create(Theater.self, value: ["theaterID" :"3","theaterNameRealm":"Kasi 4K Dolby Atmos", "addressRealm":"Ashok Nagar", "avaiableSeatRealm":5, "dateRealm":20, "timeRealm":2, "amountRealm":120], update:true)
-            MyRealm.create(Theater.self, value: ["theaterID" :"4","theaterNameRealm":"Udhayam Complex", "addressRealm":"JafferKhanpet", "avaiableSeatRealm":12, "dateRealm":20, "timeRealm":4, "amountRealm":120], update:true)
-            MyRealm.create(Theater.self, value: ["theaterID" :"5","theaterNameRealm":"Vettri Theatres RGB Laser", "addressRealm":"Chrompet", "avaiableSeatRealm":11, "dateRealm":20, "timeRealm":7, "amountRealm":120], update:true)
-            MyRealm.create(Theater.self, value: ["theaterID" :"6","theaterNameRealm":"Albert Complex", "addressRealm":"Egmore", "avaiableSeatRealm":2, "dateRealm":20, "timeRealm":10, "amountRealm":120], update:true)
-            MyRealm.create(Theater.self, value: ["theaterID" :"7","theaterNameRealm":"EGA Cinemas", "addressRealm":"Kilpauk", "avaiableSeatRealm":14, "dateRealm":20, "timeRealm":11, "amountRealm":120], update:true)
-            MyRealm.create(Theater.self, value: ["theaterID" :"8","theaterNameRealm":"Kamala Cinemas", "addressRealm":"Vadapalani", "avaiableSeatRealm":6, "dateRealm":20, "timeRealm":3, "amountRealm":120], update:true)
-            MyRealm.create(Theater.self, value: ["theaterID" :"9","theaterNameRealm":"Rakki Cinemas", "addressRealm":"Ambattur", "avaiableSeatRealm":20, "dateRealm":20, "timeRealm":10, "amountRealm":120], update:true)
-            MyRealm.create(Theater.self, value: ["theaterID" :"10","theaterNameRealm":"Lakshmi Bala Movie Park A/C", "addressRealm":"Padi", "avaiableSeatRealm":20, "dateRealm":20, "timeRealm":4, "amountRealm":120], update:true)
-        }
+        //theaterCollection var is crated to hold the theaterlist of names
         theaterCollection = MyRealm.objects(Theater.self)
+        //in this function the table view get the data from the function below
         mainTable.dataSource = self
         mainTable.delegate = self
         mainTable.reloadData()
@@ -51,4 +42,13 @@ class TheaterTableList: UIViewController, UITableViewDataSource, UITableViewDele
         cell.addressCell.text = dict.addressRealm ?? ""
         return cell
     }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let dict = self.theaterCollection[indexPath.row]
+        let navigate = UIStoryboard.init(name: "Main", bundle: nil)
+        let theater = navigate.instantiateViewController(withIdentifier: "TheaterMovieTableList") as! TheaterMovieTableList
+        theater.theaterID = dict.theaterID ?? " "
+        
+        self.navigationController?.pushViewController(theater, animated: true)
+    }
+    
 }

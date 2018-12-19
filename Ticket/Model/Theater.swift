@@ -14,6 +14,7 @@ import RealmSwift
 class Theater: Object {
     
     @objc dynamic var theaterID : String?
+    var movieID = List<String>()
     @objc dynamic var theaterNameRealm : String?
     @objc dynamic var addressRealm : String?
     @objc dynamic var avaiableSeatRealm = 0
