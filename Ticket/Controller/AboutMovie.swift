@@ -11,7 +11,8 @@ import YouTubePlayer
 
 class AboutMovie: UIViewController {
 
-
+    var available_cout = 0
+    
     @IBOutlet weak var videoView: YouTubePlayerView!
     
     @IBOutlet var likeLable: UILabel!
@@ -31,5 +32,11 @@ class AboutMovie: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    @IBAction func book(_ sender: Any) {
+        let navigate = UIStoryboard.init(name:"Main", bundle: nil)
+        let tessyt = navigate.instantiateViewController(withIdentifier: "SeatSelect") as! SeatSelect
+        tessyt.available_cout = self.available_cout
+        self.navigationController?.pushViewController(tessyt, animated: true)
     }
 }

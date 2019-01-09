@@ -37,7 +37,7 @@ class TheaterMovieTableList: UIViewController,UITableViewDataSource, UITableView
             let thr = MyRealm.objects(Theater.self).filter(filter_thr)
             self.theaterList.append(thr[0])
             i = i + 1
-            
+
         }
       
         maineTMTable.dataSource = self
@@ -61,5 +61,13 @@ class TheaterMovieTableList: UIViewController,UITableViewDataSource, UITableView
         cell.theaterMovieAddCell.text = dict.addressRealm ?? ""
         cell.theaterMovieTimeCell.text = String(dict.timeRealm)
         return cell
+    }
+    //TODO:- function for the tap the Image in collection view
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let dict = theaterList[indexPath.row]
+        let navigate = UIStoryboard.init(name: "Main", bundle: nil)
+        let tessyt = navigate.instantiateViewController(withIdentifier: "AboutMovie") as! AboutMovie
+        tessyt.available_cout = dict.avaiableSeatRealm
+        self.navigationController?.pushViewController(tessyt, animated: true)
     }
 }

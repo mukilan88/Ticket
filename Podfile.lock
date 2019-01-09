@@ -1,14 +1,14 @@
 PODS:
-  - Alamofire (4.5.1)
-  - FSPagerView (0.7.1)
-  - Kingfisher (4.2.0)
-  - ObjectMapper (3.0.0)
-  - Realm (3.0.1):
-    - Realm/Headers (= 3.0.1)
-  - Realm/Headers (3.0.1)
-  - RealmSwift (3.0.1):
-    - Realm (= 3.0.1)
-  - SwiftyJSON (3.1.4)
+  - Alamofire (4.8.0)
+  - FSPagerView (0.8.2)
+  - Kingfisher (5.0.1)
+  - ObjectMapper (3.4.2)
+  - Realm (3.13.1):
+    - Realm/Headers (= 3.13.1)
+  - Realm/Headers (3.13.1)
+  - RealmSwift (3.13.1):
+    - Realm (= 3.13.1)
+  - SwiftyJSON (4.2.0)
   - YouTubePlayer (0.4.0)
 
 DEPENDENCIES:
@@ -21,16 +21,27 @@ DEPENDENCIES:
   - SwiftyJSON
   - YouTubePlayer
 
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - FSPagerView
+    - Kingfisher
+    - ObjectMapper
+    - Realm
+    - RealmSwift
+    - SwiftyJSON
+    - YouTubePlayer
+
 SPEC CHECKSUMS:
-  Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
-  FSPagerView: 958aba39684e1573755ddcfcc29f7eebb8413cee
-  Kingfisher: 9ee7e788d8ba07c3f21ce0d43f33cec310a4f781
-  ObjectMapper: 92230db59bf8f341a5c3a3cf0b9fbdde3cf0d87f
-  Realm: ba6144c74f835f7497791f6599d63a7755377b83
-  RealmSwift: 7d13b1ac4b6022a13f841e3143e7789c9e40ad0d
-  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
+  Alamofire: 3ec537f71edc9804815215393ae2b1a8ea33a844
+  FSPagerView: 816a18842306973cc7cc6df8a5332272f7815c30
+  Kingfisher: 4f771421b9208185217550528a06fd48756cb7c2
+  ObjectMapper: 0d4402610f4e468903ae64629eec4784531e5c51
+  Realm: 50071da38fe079e0735e47c9f2eae738c68c5996
+  RealmSwift: 8a1e6a02b7a08cd17a31e3115143fb69fe5f3fb9
+  SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
   YouTubePlayer: 028451f6772f372d4759866db99824c676ac1473
 
-PODFILE CHECKSUM: e5cd71209ac23e7202a38afb5494a0fec42f0665
+PODFILE CHECKSUM: 98e080b67209bc6cd028adeedddd394db01b1db9
 
-COCOAPODS: 1.2.0
+COCOAPODS: 1.5.3

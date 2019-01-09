@@ -18,8 +18,7 @@ class TheaterTableList: UIViewController, UITableViewDataSource, UITableViewDele
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        //mainTable is named as table cell drag and droped
-        self.mainTable.dataSource = self
+        
         //theaterCollection var is crated to hold the theaterlist of names
         theaterCollection = MyRealm.objects(Theater.self)
         //in this function the table view get the data from the function below
@@ -38,17 +37,17 @@ class TheaterTableList: UIViewController, UITableViewDataSource, UITableViewDele
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "TheaterTableCell", for: indexPath) as! TheaterTableCell
         let dict = self.theaterCollection[indexPath.row]
+        
         cell.theaterNameCell.text = dict.theaterNameRealm ?? ""
         cell.addressCell.text = dict.addressRealm ?? ""
         return cell
     }
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let dict = self.theaterCollection[indexPath.row]
-        let navigate = UIStoryboard.init(name: "Main", bundle: nil)
-        let theater = navigate.instantiateViewController(withIdentifier: "TheaterMovieTableList") as! TheaterMovieTableList
-        theater.theaterID = dict.theaterID ?? " "
-        
-        self.navigationController?.pushViewController(theater, animated: true)
-    }
-    
+//    //TODO:- to navigate to the
+//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//        let dict = self.theaterCollection[indexPath.row]
+//        let navigate = UIStoryboard.init(name: "Main", bundle: nil)
+//        let theater = navigate.instantiateViewController(withIdentifier: "TheaterMovieTableList") as! TheaterMovieTableList
+//        theater.theaterID = dict.theaterID ?? " "
+//        self.navigationController?.pushViewController(theater, animated: true)
+//    }
 }

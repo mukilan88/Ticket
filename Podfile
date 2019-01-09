@@ -10,7 +10,7 @@ target 'Ticket' do
 	pod 'SwiftyJSON'
 	pod 'ObjectMapper'
 	pod 'RealmSwift'
-    pod 'Realm'
+    	pod 'Realm'
 	pod 'FSPagerView'
 	pod 'Kingfisher'
 	pod ‘YouTubePlayer’

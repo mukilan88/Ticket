@@ -11,13 +11,12 @@ import Realm
 import RealmSwift
 
 class Seat: Object {
-    
     @objc dynamic var seatNumRealm : String?
-    @objc dynamic var bookedCountRealm = 0
-    @objc dynamic var avaiableCountRealm = 0
+    @objc dynamic var seatNumID : String?
     @objc dynamic var isBookedRealm = 0
   
     override static func primaryKey()->String{
-        return "seatNumRealm"
+        return "seatNumID"
+        
     }
 }

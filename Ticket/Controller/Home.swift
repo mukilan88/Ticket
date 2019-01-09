@@ -17,7 +17,7 @@ class Home: UIViewController, FSPagerViewDelegate, FSPagerViewDataSource, UIColl
     //Variable given for movie in the to menu
     @IBOutlet var theaterList: UILabel!
     //Variable given to image for slide show it only work with the help of FSPagerViw cocopod
-    var tablelist = [#imageLiteral(resourceName: "sarkar"), #imageLiteral(resourceName: "Smarther-Logo"), #imageLiteral(resourceName: "LanchImage"), #imageLiteral(resourceName: "Smarther-Logo"), #imageLiteral(resourceName: "sarkar")]
+    var tablelist = [#imageLiteral(resourceName: "sarkar"), #imageLiteral(resourceName: "Smarther-Logo"), #imageLiteral(resourceName: "LanchImage"), #imageLiteral(resourceName: "Smarther-Logo"), #imageLiteral(resourceName: "sarkar"), UIImage.init(named: "sarkar")]
     //MARK:- slideView input the image cell and time
     @IBOutlet weak var slideView: FSPagerView!{
         didSet {
@@ -76,8 +76,7 @@ class Home: UIViewController, FSPagerViewDelegate, FSPagerViewDataSource, UIColl
         return self.movieCollection.count
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-          let dict = self.movieCollection[indexPath.row]
-        
+        let dict = self.movieCollection[indexPath.row]
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MovieViewCell", for: indexPath) as! MovieViewCell
         let url = URL.init(string: dict.movieImgRealm ?? "")
         cell.movieImgCell?.kf.setImage(with: url)
@@ -85,19 +84,16 @@ class Home: UIViewController, FSPagerViewDelegate, FSPagerViewDataSource, UIColl
         cell.movieNameCell.text = dict.movieNameRealm ?? ""
         return cell
     }
-    
+    //TODO:- function for the tap the Image in collection view
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-    
         let dict = self.movieCollection[indexPath.row]
         let navigate = UIStoryboard.init(name: "Main", bundle: nil)
         let theater = navigate.instantiateViewController(withIdentifier: "TheaterMovieTableList") as! TheaterMovieTableList
         theater.movieID = dict.movieID ?? ""
-        
         self.navigationController?.pushViewController(theater, animated: true)
         
     }
     
-
     //TODO:- function for the image slideView
      func numberOfItems(in pagerView: FSPagerView) -> Int {
             return self.tablelist.count
@@ -116,11 +112,4 @@ class Home: UIViewController, FSPagerViewDelegate, FSPagerViewDataSource, UIColl
         let tessyt = navigate.instantiateViewController(withIdentifier: "TheaterTableList") as! TheaterTableList
         self.navigationController?.pushViewController(tessyt, animated: true)
     }
-//    //TODO:- function for the tap the Image in collection view
-//    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-//        let navigate = UIStoryboard.init(name:"Main", bundle: nil)
-//        let tessyt = navigate.instantiateViewController(withIdentifier: "AboutMovie") as! AboutMovie
-//        self.navigationController?.pushViewController(tessyt, animated: true)
-//        print("img taped")
-//    }
 }
