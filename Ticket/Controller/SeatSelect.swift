@@ -12,8 +12,10 @@ import RealmSwift
 
 class SeatSelect: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
     
+    @IBOutlet var bookFinal: UIButton!
     @IBOutlet weak var seatNoCollection: UICollectionView!
     var seatNo : Results<Seat>!
+    var bookedSeat : String?
     
     var available_cout = 0
     var i = 0
@@ -46,6 +48,10 @@ class SeatSelect: UIViewController, UICollectionViewDataSource, UICollectionView
         seatNoCollection.delegate = self
         seatNoCollection.reloadData()
         
+        //MARK: - tap function to work whn we touch the Movies in top menu item
+        let tap = UITapGestureRecognizer.init(target: self, action: #selector (bookLabel))
+        bookFinal.isUserInteractionEnabled = true
+        bookFinal.addGestureRecognizer(tap)
         
     }
     override func didReceiveMemoryWarning() {
@@ -102,11 +108,19 @@ class SeatSelect: UIViewController, UICollectionViewDataSource, UICollectionView
         else
         {
             cell.seatNoCell.backgroundColor = UIColor.green
+            
             try! MyRealm.write
             {
                 MyRealm.create(Seat.self, value: ["seatNumRealm":"A1","seatNumID":dict.seatNumID ?? "","isBookedRealm":1], update:true)
             }
+            
         }
-
+    
+    }
+    //TODO:- function for the tap the Movie lable go to movie list
+    @objc func bookLabel() {
+        let navigate = UIStoryboard.init(name:"Main", bundle: nil)
+        let tessyt = navigate.instantiateViewController(withIdentifier: "Success") as! Success
+        self.navigationController?.pushViewController(tessyt, animated: true)
     }
 }

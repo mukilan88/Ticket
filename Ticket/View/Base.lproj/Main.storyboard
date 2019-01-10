@@ -181,10 +181,10 @@
             </objects>
             <point key="canvasLocation" x="-2911" y="-3047"/>
         </scene>
-        <!--History-->
+        <!--Success-->
         <scene sceneID="IUX-Ao-cfm">
             <objects>
-                <viewController storyboardIdentifier="Success" id="aar-Tt-zgL" customClass="Success" customModule="Ticket" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Success" title="Success" id="aar-Tt-zgL" customClass="Success" customModule="Ticket" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EIe-st-Udt">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -612,7 +612,7 @@ VGhhbmsgWW91IEZvciAQQm9va2luZw
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bfl-sY-qhS" userLabel="AboutMovie">
-                                <rect key="frame" x="0.0" y="320" width="375" height="297"/>
+                                <rect key="frame" x="0.0" y="320" width="375" height="317"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About The Movie" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="m1b-8y-dUn">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="30"/>
@@ -624,7 +624,7 @@ VGhhbmsgWW91IEZvciAQQm9va2luZw
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="30" baselineAdjustment="none" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AwL-Fk-mO6">
-                                        <rect key="frame" x="20" y="50" width="335" height="227"/>
+                                        <rect key="frame" x="20" y="50" width="335" height="247"/>
                                         <string key="text">2.0 is a 2018 Indian science fiction action film[3] in Tamil, written and directed by S. Shankar. Produced by Subaskaran under the banner of Lyca Productions, the film is a standalone sequel to Enthiran (2010), featuring Rajinikanth reprising the roles of Dr. Vaseegaran and Chitti, alongside Akshay Kumar and Amy Jackson. Sudhanshu Pandey, Adil Hussain, Kalabhavan Shajohn, and K. Ganesh appear in supporting roles. The film follows the conflict between Chitti, the once dismantled android, and Pakshi Rajan, an ornithologist who seeks vengeance on smartphone users to prevent avian population decline. The soundtrack is composed by A. R. Rahman, with lyrics written by Madhan Karky and Na. Muthukumar.
 
 </string>
@@ -644,12 +644,12 @@ VGhhbmsgWW91IEZvciAQQm9va2luZw
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="REZ-oo-LiF" userLabel="Book">
-                                <rect key="frame" x="0.0" y="617" width="375" height="50"/>
+                                <rect key="frame" x="0.0" y="637" width="375" height="30"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Leg-5Z-5qU">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="30"/>
                                         <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" name="GurmukhiMN-Bold" family="Gurmukhi MN" pointSize="30"/>
+                                        <fontDescription key="fontDescription" name="GurmukhiMN-Bold" family="Gurmukhi MN" pointSize="20"/>
                                         <state key="normal" title="Book -------&gt;">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
@@ -661,7 +661,7 @@ VGhhbmsgWW91IEZvciAQQm9va2luZw
                                 </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="BGL-Vn-yQE"/>
+                                    <constraint firstAttribute="height" constant="30" id="BGL-Vn-yQE"/>
                                     <constraint firstItem="Leg-5Z-5qU" firstAttribute="leading" secondItem="REZ-oo-LiF" secondAttribute="leading" id="LKF-A6-qsf"/>
                                     <constraint firstItem="Leg-5Z-5qU" firstAttribute="top" secondItem="REZ-oo-LiF" secondAttribute="top" id="WZ7-qi-0zj"/>
                                     <constraint firstAttribute="bottom" secondItem="Leg-5Z-5qU" secondAttribute="bottom" id="dSx-2B-gys"/>
@@ -726,7 +726,7 @@ VGhhbmsgWW91IEZvciAQQm9va2luZw
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fMy-oW-d27">
                                 <rect key="frame" x="0.0" y="20" width="375" height="30"/>
                                 <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="BooK">
+                                <state key="normal" title="Book  ---&gt;">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>
@@ -797,6 +797,7 @@ VGhhbmsgWW91IEZvciAQQm9va2luZw
                         <viewLayoutGuide key="safeArea" id="J3N-A0-lxa"/>
                     </view>
                     <connections>
+                        <outlet property="bookFinal" destination="fMy-oW-d27" id="k54-KK-oTQ"/>
                         <outlet property="seatNoCollection" destination="w8B-H2-qQn" id="cdM-WA-ZeM"/>
                     </connections>
                 </viewController>
