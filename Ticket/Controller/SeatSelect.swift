@@ -84,15 +84,19 @@ class SeatSelect: UIViewController, UICollectionViewDataSource, UICollectionView
         let dict = self.seatNo[index.row]
         
         let cell = self.seatNoCollection.cellForItem(at: index) as! SeatNoCell
-        
        
         if dict.isBookedRealm == 1
         {
-            cell.seatNoCell.backgroundColor = UIColor.clear
             
-            try! MyRealm.write
-            {
-                MyRealm.create(Seat.self, value: ["seatNumRealm":"A1","seatNumID":dict.seatNumID ?? "","isBookedRealm":0], update:true)
+            if cell.seatNoCell.backgroundColor == UIColor.red{
+                
+            }else{
+                cell.seatNoCell.backgroundColor = UIColor.clear
+                
+                try! MyRealm.write
+                {
+                    MyRealm.create(Seat.self, value: ["seatNumRealm":"A1","seatNumID":dict.seatNumID ?? "","isBookedRealm":0], update:true)
+                }
             }
         }
         else
