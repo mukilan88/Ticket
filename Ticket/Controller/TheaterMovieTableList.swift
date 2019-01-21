@@ -59,7 +59,6 @@ class TheaterMovieTableList: UIViewController,UITableViewDataSource, UITableView
         let dict = self.theaterList[indexPath.row]
         cell.theaterMovieNameCell.text = dict.theaterNameRealm ?? ""
         cell.theaterMovieAddCell.text = dict.addressRealm ?? ""
-        cell.theaterMovieTimeCell.text = String(dict.timeRealm)
         return cell
     }
     //TODO:- function for the tap the Image in collection view

@@ -23,7 +23,6 @@ class SeatSelect: UIViewController, UICollectionViewDataSource, UICollectionView
     var i = 0
     
     var seatTotal = 0
-    var s = 0
     var cost = 0
     
     
@@ -127,7 +126,6 @@ class SeatSelect: UIViewController, UICollectionViewDataSource, UICollectionView
                 MyRealm.create(Seat.self, value: ["seatNumRealm":"A1","seatNumID":dict.seatNumID ?? "","isBookedRealm":1], update:true)
             }
             if cell.seatNoCell.backgroundColor == UIColor.green{
-                
                 seatTotal = seatTotal + 1
                 seatNumTotal.text = "Seat Select : \(seatTotal)"
             }

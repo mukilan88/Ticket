@@ -12,7 +12,6 @@ class TheaterMovieCell: UITableViewCell {
 
     @IBOutlet weak var theaterMovieNameCell: UILabel!
     @IBOutlet weak var theaterMovieAddCell: UILabel!
-    @IBOutlet weak var theaterMovieTimeCell: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
