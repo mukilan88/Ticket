@@ -30,7 +30,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="gL0-8M-O2x">
-                                                    <rect key="frame" x="20" y="20" width="280" height="30"/>
+                                                    <rect key="frame" x="20" y="20" width="335" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="30" id="beS-SN-3bE"/>
                                                     </constraints>
@@ -39,7 +39,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="Z5k-tf-5AR">
-                                                    <rect key="frame" x="20" y="70" width="280" height="30"/>
+                                                    <rect key="frame" x="20" y="70" width="335" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="30" id="CBl-X9-Isp"/>
                                                     </constraints>
@@ -106,7 +106,7 @@
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KjN-Td-bVQ">
-                                                            <rect key="frame" x="20" y="20" width="280" height="30"/>
+                                                            <rect key="frame" x="20" y="20" width="335" height="30"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="30" id="S0O-p8-9AT"/>
                                                             </constraints>
@@ -115,7 +115,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tSt-Dp-SzK">
-                                                            <rect key="frame" x="35" y="70" width="250" height="30"/>
+                                                            <rect key="frame" x="35" y="70" width="305" height="30"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="30" id="Sfl-Jn-oVE"/>
                                                             </constraints>
@@ -124,7 +124,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2gz-RT-8S0">
-                                                            <rect key="frame" x="35" y="120" width="250" height="30"/>
+                                                            <rect key="frame" x="35" y="120" width="305" height="30"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="30" id="Mfg-8W-p9p"/>
                                                             </constraints>
@@ -201,22 +201,10 @@ VGhhbmsgWW91IEZvciAQQm9va2luZw
                                         <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Seat No" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="q2g-m2-W2h">
-                                        <rect key="frame" x="20" y="269" width="335" height="50"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="zuD-7x-krh"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="MalayalamSangamMN-Bold" family="Malayalam Sangam MN" pointSize="50"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="q2g-m2-W2h" secondAttribute="trailing" constant="20" id="Aco-wU-uBk"/>
                                     <constraint firstItem="5P8-CA-cYK" firstAttribute="top" secondItem="bA7-ie-oBv" secondAttribute="top" constant="100" id="EuL-TD-lU8"/>
-                                    <constraint firstItem="q2g-m2-W2h" firstAttribute="leading" secondItem="bA7-ie-oBv" secondAttribute="leading" constant="20" id="YGN-a8-xaI"/>
                                     <constraint firstItem="5P8-CA-cYK" firstAttribute="leading" secondItem="bA7-ie-oBv" secondAttribute="leading" constant="20" id="cIU-An-qij"/>
-                                    <constraint firstItem="q2g-m2-W2h" firstAttribute="top" secondItem="5P8-CA-cYK" secondAttribute="bottom" constant="50" id="km4-Ag-dmQ"/>
                                     <constraint firstAttribute="trailing" secondItem="5P8-CA-cYK" secondAttribute="trailing" constant="20" id="pS3-jb-ycl"/>
                                 </constraints>
                             </view>
@@ -231,9 +219,6 @@ VGhhbmsgWW91IEZvciAQQm9va2luZw
                         <viewLayoutGuide key="safeArea" id="5Jz-gt-3My"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="History" image="time-30" id="u1h-6g-j8q"/>
-                    <connections>
-                        <outlet property="seatNumber" destination="q2g-m2-W2h" id="0ap-oK-E7W"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K9q-Yy-XuE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -270,7 +255,7 @@ VGhhbmsgWW91IEZvciAQQm9va2luZw
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5FG-Cx-Abl">
-                                                            <rect key="frame" x="10" y="10" width="300" height="23.5"/>
+                                                            <rect key="frame" x="10" y="10" width="355" height="23.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -651,9 +636,9 @@ VGhhbmsgWW91IEZvciAQQm9va2luZw
                                         <constraints>
                                             <constraint firstAttribute="height" constant="331" id="UiW-a1-flt"/>
                                         </constraints>
-                                        <mutableString key="text">2.0 is a 2018 Indian science fiction action film[3] in Tamil, written and directed by S. Shankar. Produced by Subaskaran under the banner of Lyca Productions, the film is a standalone sequel to Enthiran (2010), featuring Rajinikanth reprising the roles of Dr. Vaseegaran and Chitti, alongside Akshay Kumar and Amy Jackson. Sudhanshu Pandey, Adil Hussain, Kalabhavan Shajohn, and K. Ganesh appear in supporting roles. The film follows the conflict between Chitti, the once dismantled android, and Pakshi Rajan, an ornithologist who seeks vengeance on smartphone users to prevent avian population decline. The soundtrack is composed by A. R. Rahman, with lyrics written by Madhan Karky and Na. Muthukumar.
+                                        <string key="text">2.0 is a 2018 Indian science fiction action film[3] in Tamil, written and directed by S. Shankar. Produced by Subaskaran under the banner of Lyca Productions, the film is a standalone sequel to Enthiran (2010), featuring Rajinikanth reprising the roles of Dr. Vaseegaran and Chitti, alongside Akshay Kumar and Amy Jackson. Sudhanshu Pandey, Adil Hussain, Kalabhavan Shajohn, and K. Ganesh appear in supporting roles. The film follows the conflict between Chitti, the once dismantled android, and Pakshi Rajan, an ornithologist who seeks vengeance on smartphone users to prevent avian population decline. The soundtrack is composed by A. R. Rahman, with lyrics written by Madhan Karky and Na. Muthukumar.
 
-</mutableString>
+</string>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>

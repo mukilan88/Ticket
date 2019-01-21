@@ -26,6 +26,7 @@ class SeatSelect: UIViewController, UICollectionViewDataSource, UICollectionView
     var s = 0
     var cost = 0
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         //Realm DB input of Seat Number
@@ -58,12 +59,6 @@ class SeatSelect: UIViewController, UICollectionViewDataSource, UICollectionView
         let tap = UITapGestureRecognizer.init(target: self, action: #selector (bookLabel))
         bookFinal.isUserInteractionEnabled = true
         bookFinal.addGestureRecognizer(tap)
-        
-        //MARK: - tap function to work select seat number total
-        let seatTap = UITapGestureRecognizer.init(target: self, action: #selector (totalSeatNum))
-        seatNoCollection.isUserInteractionEnabled = true
-        seatNoCollection.addGestureRecognizer(seatTap)
-        
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -114,6 +109,13 @@ class SeatSelect: UIViewController, UICollectionViewDataSource, UICollectionView
                 {
                     MyRealm.create(Seat.self, value: ["seatNumRealm":"A1","seatNumID":dict.seatNumID ?? "","isBookedRealm":0], update:true)
                 }
+                if cell.seatNoCell.backgroundColor == UIColor.clear{
+                    seatTotal = seatTotal - 1
+                    seatNumTotal.text = "Seat Select : \(seatTotal)"
+                }
+                //TODO: - calculating the cost
+                cost = seatTotal * 120
+                amount.text = "Cost : \(cost)"
             }
         }
         else
@@ -124,15 +126,14 @@ class SeatSelect: UIViewController, UICollectionViewDataSource, UICollectionView
             {
                 MyRealm.create(Seat.self, value: ["seatNumRealm":"A1","seatNumID":dict.seatNumID ?? "","isBookedRealm":1], update:true)
             }
-//            if s == 0 {
-//
-//                        }else if seatTotal >= 1 {
-//                            seatTotal = seatTotal + 1
-//                                cost = seatTotal * 120
-//                        }else{
-//                            seatTotal  = 1
-//                        }
-            
+            if cell.seatNoCell.backgroundColor == UIColor.green{
+                
+                seatTotal = seatTotal + 1
+                seatNumTotal.text = "Seat Select : \(seatTotal)"
+            }
+            //TODO: - calculating the cost
+            cost = seatTotal * 120
+            amount.text = "Cost : \(cost)"
         }
     
     }
@@ -142,16 +143,4 @@ class SeatSelect: UIViewController, UICollectionViewDataSource, UICollectionView
         let tessyt = navigate.instantiateViewController(withIdentifier: "Success") as! Success
         self.navigationController?.pushViewController(tessyt, animated: true)
     }
-    //TODO:- function for the tap the Movie lable go to movie list
-    @objc func totalSeatNum() {
-        if s == 0 {
-
-        }else if seatTotal >= 1 {
-            seatTotal = seatTotal + 1
-                cost = seatTotal * 120
-        }else{
-            seatTotal  = 1
-        }
-        }
-    
 }
